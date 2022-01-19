@@ -2,40 +2,40 @@
 
 ## Installation & Run Application
 
-Install pagckages
-	Ø npm install
+# Install pagckages
+- npm install
 
-Copy .env file
-	Ø cp .env.example .env
+# Copy .env file
+- cp .env.example .env
 
-Migrations
-	Ø npm install -g sequelize-cli (To use sequelize command without local folder)
+# Migrations
+- npm install -g sequelize-cli (To use sequelize command without local folder)
 	
-	Ø sequelize db:migrate --url 'postgres://postgres:admin@localhost/demo_db'
+- sequelize db:migrate --url 'postgres://postgres:admin@localhost/demo_db'
 						OR
-	Ø node_modules/.bin/sequelize --url 'postgres://postgres:admin@localhost/demo_db'
+- node_modules/.bin/sequelize --url 'postgres://postgres:admin@localhost/demo_db'
 
-Create New Model and Migration when need to extend project.
-	Ø sequelize model:create --name Wishlist --attributes name:string,description:string
+# Create New Model and Migration when need to extend project.
+- sequelize model:create --name Wishlist --attributes name:string,description:string
 						OR
-	Ø node_modules/.bin/sequelize model:create --name Wishlist --attributes name:string,description:string
+- node_modules/.bin/sequelize model:create --name Wishlist --attributes name:string,description:string
 
-Start app locally
-	Ø npm run dev
+# Start app locally
+- npm run dev
 
-Start app for production (pm2)
-	Ø npm start
+# Start app for production (pm2)
+- npm start
 
-Eslint command
-	Ø npm run lint
+# Eslint command
+- npm run lint
 
-Unit test
-  	Ø npm run test
-  	Ø npm run test:watch
+# Unit test
+- npm run test
+- npm run test:watch
 
-Code coverage
-  	Ø npm run coverage
-  	Ø npm run coverage:coveralls
+# Code coverage
+- npm run coverage
+- npm run coverage:coveralls
 
 ## Features
 - **ExpressJs**: [Expressjs](https://expressjs.com/)
