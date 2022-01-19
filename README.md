@@ -60,18 +60,18 @@
 - **Editor config**: consistent editor configuration using [EditorConfig](https://editorconfig.org)
 
 ## Project Structure
-src\
-  config\         # Environment variables and configuration related things
-  controllers\    # Route controllers (controller layer)
-  docs\           # Swagger files
-  middlewares\    # Custom express middlewares
-  migrations\     # DB table schema migrations
-  models\         # Database models (data layer)
-  routes\         # API Routes
-  seeders\        # Initialize db table data if needed
-  services\       # Business logic (service layer)
-  utils\          # Utility classes and functions
-  validations\    # Request data validation schemas
-  app.js          # Express app
-  ndex.js         # App entry point
-tests\            # Unit & Integration testing with Jest
+- src\
+  - config\         # Environment variables and configuration related things
+  - controllers\    # Route controllers (controller layer)
+  - docs\           # Swagger files
+  - middlewares\    # Custom express middlewares
+  - migrations\     # DB table schema migrations
+  - models\         # Database models (data layer)
+  - routes\         # API Routes
+  - seeders\        # Initialize db table data if needed
+  - services\       # Business logic (service layer)
+  - utils\          # Utility classes and functions
+  - validations\    # Request data validation schemas
+  - app.js          # Express app
+  - ndex.js         # App entry point
+- tests\            # Unit & Integration testing with Jest
