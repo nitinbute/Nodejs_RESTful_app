@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - '12'
+before_script:
+  - psql -c 'create database msci_demo_db;' -U postgres -P admin
+services:
+  - postgresql
+cache: npm
+branches:
+  only:
+    - master
+env:
+  global:
+    - PORT=3000
+    - PG_USERNAME=postgres
+    - PG_PASSWORD=admin
+    - PG_DATABASE=msci_demo_db
+    - PG_HOST=localhost
+    - PG_PORT=5432
+    - PG_DIALECT=postgres
+    - JWT_SECRET=thisisasamplesecret
+    - JWT_ACCESS_EXPIRATION_MINUTES=30
+    - JWT_REFRESH_EXPIRATION_DAYS=30
+script:
+  - npm run lint
+  - npm run test
+after_success: npm run coverage:coveralls
